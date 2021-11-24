@@ -64,11 +64,12 @@ const App = () => {
       }}
     >
       <>
-        <Tasks
+        <Tasks />
+        {/* <Tasks
           todos={tasks}
           checkIt={handleCheckTodo}
           deleteIt={handleDeleteTodo}
-        />
+        /> */}
         <NewTask
           setTask={setTask}
           inputValue={newTask}
