@@ -27,9 +27,8 @@ const App = () => {
       };
       allTasks.push(addnewTask);
       setTasks(allTasks);
-      console.log(newTask);
       setNewTask("");
-      console.log(tasks);
+      toast.success("تسک جدید با موفقیت اضافه شد")
     } else {
       toast.warn("ورودی خالیست");
     }
@@ -42,14 +41,13 @@ const App = () => {
     thisTodo.completed = !thisTodo.completed;
     todos[todoIndex] = thisTodo;
     setTasks(todos);
-    console.log(todos);
-    console.log(thisTodo);
   };
 
   const handleDeleteTodo = (id) => {
     const todos = [...tasks];
     const filtered = todos.filter((todo) => todo.id !== id);
     setTasks(filtered);
+    toast.success("تسک با موفقیت حذف گردید");
   };
 
   return (
@@ -65,17 +63,7 @@ const App = () => {
     >
       <>
         <Tasks />
-        {/* <Tasks
-          todos={tasks}
-          checkIt={handleCheckTodo}
-          deleteIt={handleDeleteTodo}
-        /> */}
-        <NewTask
-          setTask={setTask}
-          inputValue={newTask}
-          addNewTask={handleNewTask}
-        />
-
+        <NewTask />
         <ToastContainer />
       </>
     </TodoContext.Provider>
