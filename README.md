@@ -1,3 +1,6 @@
+My aim is to learn React-App from the beginning again, so I created this app, and also I want it to be completed step-by-step.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
