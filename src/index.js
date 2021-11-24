@@ -2,5 +2,6 @@ import React from 'react';
 import {render} from 'react-dom';
 
 import App from './container/App';
+import GlobalState from './container/GlobalState';
 
-render(<App />, document.getElementById('root'));
+render(<GlobalState><App /></GlobalState>, document.getElementById('root'));

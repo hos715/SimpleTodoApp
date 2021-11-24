@@ -95,7 +95,7 @@ input {
     content: "";
     display: block;
     position: absolute;
-    width: 4px;
+    width: 5px;
     height: calc(100% - 0.8rem);
     right: 0;
     background-color: #cab004;
