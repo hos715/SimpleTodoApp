@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import { v4 as uuidv4} from 'uuid';
+
+
 import NewTask from "../components/NewTask";
 import Tasks from "../components/tasks";
+
 import TodoContext from "../context/TodoContext";
 
 const App = () => {
@@ -12,7 +16,6 @@ const App = () => {
     let data = event.target.value;
     if (data.trim() !== "" || data.trim() !== " ") {
       setNewTask(data);
-      console.log(data);
     }
   };
 
@@ -21,7 +24,7 @@ const App = () => {
     if (newTask.trim().length > 0) {
       const allTasks = [...tasks];
       const addnewTask = {
-        id: Math.floor(Math.random() * 100),
+        id: uuidv4(),
         todo: newTask,
         completed: false,
       };
