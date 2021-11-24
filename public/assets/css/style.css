@@ -136,3 +136,40 @@ input {
     background-color: red;
     color: white;
 }
+
+.c-about-me {
+    width: 100%;
+    background-color: rgba(238, 238, 238, 0.8);
+    padding: 2rem;
+}
+.c-about-me__title {
+    color: #0945be;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+.c-about-me__descriptions {
+    max-width: 720px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    color: #505050;
+}
+.c-no-match {
+    margin: auto;
+    padding: 3rem 1rem;
+}
+.c-no-match__col {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: .75rem;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.c-no-match__col h1,
+.c-no-match__col h2 {
+    margin: 0 0 1rem;
+}
+
