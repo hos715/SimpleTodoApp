@@ -5,25 +5,29 @@ import NewTask from "../components/NewTask";
 import Tasks from "../components/tasks";
 import AboutMe from "../components/common/AboutMe";
 import NoMatch from "./../components/common/NoMatch";
+import Nav from "./../components/common/Nav";
 
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <>
-              <Tasks />
-              <NewTask />
-            </>
-          }
-        />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
-    </div>
+    <>
+      <Nav />
+      <div>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <>
+                <Tasks />
+                <NewTask />
+              </>
+            }
+          />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </div>
+    </>
   );
 };
 
