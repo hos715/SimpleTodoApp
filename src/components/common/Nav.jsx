@@ -7,16 +7,14 @@ const Nav = () => {
          <li>
             <NavLink
                to="/"
-               className="c-nav-item" exact
-               activeClassName="is-active">
+               className={`c-nav-item ${({ isActive }) => isActive? "active": ''}`}>
                کارها
             </NavLink>
          </li>
          <li>
             <NavLink
                to="/about"
-               className="c-nav-item"
-               activeClassName="is-active">
+               className={`c-nav-item ${({ isActive }) => isActive? "active": ''}`}>
                درباره من
             </NavLink>
          </li>
